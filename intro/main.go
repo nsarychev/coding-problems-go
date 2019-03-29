@@ -2,5 +2,6 @@ package main
 
 func main() {
 	basics()
-	collections()
+	arraysAndSlices()
+	maps()
 }
