@@ -27,6 +27,8 @@ func add(a int, b int) int {
 
 func log(goku *Saiyan) {
 	fmt.Printf("Name: %s, Power %d\n", goku.Name, goku.Power) // or can use goku.Person.Name
+	goku.Introduce()
+	goku.Person.Introduce()
 	if goku.Father != nil {
 		println("FATHER: ")
 		log(goku.Father)
@@ -45,4 +47,12 @@ type Person struct {
 
 func (s *Saiyan) Super() {
 	s.Power += 10000
+}
+
+func (p *Person) Introduce() {
+	fmt.Printf("Hi, I'm %s\n", p.Name)
+}
+
+func (s *Saiyan) Introduce() {
+	fmt.Printf("Hi, I'm %s. Ya!\n", s.Name)
 }
