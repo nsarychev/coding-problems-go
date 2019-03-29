@@ -50,7 +50,7 @@ func arraysAndSlices() {
 
 	worst := make([]int, 5)
 	copy(worst, scores[:5])
-	fmt.Println(worst)
+	fmt.Println(worst)\
 }
 
 func arrayRange(a [5]int) {
