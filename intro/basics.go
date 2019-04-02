@@ -35,24 +35,29 @@ func log(goku *Saiyan) {
 	}
 }
 
+// Saiyan model
 type Saiyan struct {
 	*Person
 	Power  int
 	Father *Saiyan
 }
 
+// Person model
 type Person struct {
 	Name string
 }
 
+// Super increase power by 10000
 func (s *Saiyan) Super() {
 	s.Power += 10000
 }
 
+// Introduce print Person name
 func (p *Person) Introduce() {
 	fmt.Printf("Hi, I'm %s\n", p.Name)
 }
 
+// Introduce print Saiyan name
 func (s *Saiyan) Introduce() {
 	fmt.Printf("Hi, I'm %s. Ya!\n", s.Name)
 }
