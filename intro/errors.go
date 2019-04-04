@@ -13,8 +13,7 @@ func errorsRun() {
 		os.Exit(1) // dead code, just an example
 	}
 
-	n, err := strconv.Atoi(arr[1])
-	if err != nil {
+	if n, err := strconv.Atoi(arr[1]); err != nil {
 		fmt.Println("not a valid number")
 	} else {
 		fmt.Println(n)
