@@ -4,4 +4,6 @@ func main() {
 	basics()
 	arraysAndSlices()
 	maps()
+	packages()
+	logger()
 }
