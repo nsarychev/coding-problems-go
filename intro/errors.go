@@ -25,8 +25,7 @@ func errorsRun() {
 }
 
 func analyze(i int) {
-	error := isGteOne(i)
-	if error == nil {
+	if error := isGteOne(i); error == nil {
 		fmt.Println("Yes")
 	} else {
 		fmt.Println(error)
