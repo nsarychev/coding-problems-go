@@ -29,13 +29,14 @@ func analyze(i int) {
 	if error == nil {
 		fmt.Println("Yes")
 	} else {
-		fmt.Println(error.Error())
+		fmt.Println(error)
 	}
 }
 
-type error interface {
+// Ypu can define a custom error interface
+/* type error interface {
 	Error() string
-}
+} */
 
 func isGteOne(count int) error {
 	if count < 1 {

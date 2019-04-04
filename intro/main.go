@@ -7,4 +7,5 @@ func main() {
 	packages()
 	logger()
 	errorsRun()
+	deferFile()
 }
