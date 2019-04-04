@@ -31,7 +31,7 @@ func analyze(i int) {
 	}
 }
 
-// Ypu can define a custom error interface
+// You can define a custom error interface
 /* type error interface {
 	Error() string
 } */
