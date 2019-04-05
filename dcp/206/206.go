@@ -14,7 +14,6 @@ func solution(input []*item, perm []int) ([]*item, error) {
 		return nil, fmt.Errorf("input size (%d) != perm size (%d)", len(input), len(perm))
 	}
 	for index, p := range perm {
-		result[index] = input[p]
 		result[p] = input[index]
 	}
 	return result, nil
